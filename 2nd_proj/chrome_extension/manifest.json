@@ -1,0 +1,12 @@
+{
+    "manifest_version" : 2,
+    "name" : "욕",
+    "description" : "욕설 필터링",
+    "version" : "1.0.0",
+    "permissions" : ["activeTab"],
+    "browser_action" : {
+        "default_title" : "frown",
+        "default_popup" : "index.html"
+    }
+    
+}
