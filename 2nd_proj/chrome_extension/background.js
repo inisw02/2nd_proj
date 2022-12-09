@@ -9,26 +9,22 @@ document.addEventListener('DOMContentLoaded', function(){
     btn01.addEventListener("click", filter)
 })
 
+// https://ko.wikipedia.org/wiki/%EC%9A%95%EC%84%A4 에서 "개새끼"란 id값을 찾아서 *로 바꿔줌
 
 
+// async function query(data) {
+// 	const response = await fetch(
+// 		"https://api-inference.huggingface.co/models/JminJ/kcElectra_base_Bad_Sentence_Classifier",
+// 		{
+// 			headers: { Authorization: "Bearer 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" },
+// 			method: "POST",
+// 			body: JSON.stringify(data),
+// 		}
+// 	);
+// 	const result = await response.json();
+// 	return result;
+// }
 
-
-
-// import requests
-
-// API_URL = "https://api-inference.huggingface.co/models/JminJ/kcElectra_base_Bad_Sentence_Classifier"
-// API_TOKEN = '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'
-// headers = {"Authorization": f"Bearer {API_TOKEN}"}
-
-// function query(payload) {
-//     var response;
-//     response = requests.post(API_URL, {
-//       "headers": headers,
-//       "json": payload
-//     });
-//     return response.json();
-//   }
-	
-// output = query({
-// 	"inputs": "I like you. I love you",
-// })
+// query({"inputs": "I like you. I love you"}).then((response) => {
+// 	console.log(JSON.stringify(response));
+// });
